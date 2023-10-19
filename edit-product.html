@@ -11,21 +11,6 @@
 
 <body>
 
-    <div>
-        <form th:action="@{/users/page/1}" class="form-inline m-3">
-            <input type="hidden" name="sortField" th:value="${sortField}">
-            <input type="hidden" name="sortDir" th:value="${sortDir}">
-            Filter:&nbsp;
-            <input type="search" name="keyword" th:value="${keyword}" class="form-control" required>
-            &nbsp;&nbsp;
-            <button type="submit" class="btn btn-primary">
-            </button>
-            &nbsp;&nbsp;
-            <button type="button" class="btn btn-secondary" onclick="clearFilter()">
-            </button>
-        </form>
-    </div>
-
     <div class="container mt-5">
         <h1 class="text-center mb-4">Thêm/Chỉnh sửa sản phẩm</h1>
 
